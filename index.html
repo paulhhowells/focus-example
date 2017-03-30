@@ -7,7 +7,17 @@
 
 	<title>Focus Examples</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
 
+    .section {
+      margin: 1em;
+      padding: 1em;
+      border: 1px solid purple;
+      min-height: 6em;
+    }
   </style>
 </head>
 <body>
@@ -23,9 +33,9 @@
     <button type="button">Button B</button><br />
     <button type="button">Button C</button><br />
 
-    <div id="A">Section A</div>
-    <div id="B">Section A</div>
-    <div id="C">Section A</div>
+    <div id="A" style="section">Section A</div>
+    <div id="B" style="section">Section B</div>
+    <div id="C" style="section">Section C</div>
 
 	</div>
 </body>
