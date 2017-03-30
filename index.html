@@ -8,9 +8,100 @@
 	<title>Focus Examples</title>
 
   <style>
-    html, body {
+    /* Normalise */
+    html,
+    body {
       margin: 0;
       padding: 0;
+    }
+    body {
+      color: #111;
+      background-color: #fff;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      line-height: 1.5;
+    }
+
+    input,
+    input[type="text"],
+    input[type="password"],
+    input[type="search"],
+    input[type="email"],
+    input[type="submit"],
+    button,
+    textarea {
+      font-size: 1em;
+      font-family: sans-serif;
+    }
+    select,
+    option {
+      font-size: 1em;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    fieldset,
+    img,
+    a img {
+      border: none;
+    }
+    img {
+      vertical-align: bottom;
+    }
+    p img {
+      vertical-align: baseline;
+    }
+
+    /* Base */
+    h1 {
+      margin: 0 0 0.25em 0;
+      padding: 0;
+      font-size: 4em;
+      font-weight: 900;
+      line-height: 1.5;
+      letter-spacing: -5.2pt;
+      color: #c33;
+    }
+    p {
+      margin: 0 0 1.25em 0;
+      padding: 0;
+      line-height: 1.25;
+    }
+    li {
+      margin-bottom: 0.75em;
+    }
+
+    a,
+    a:link {
+      text-decoration: underline;
+      color: #222;
+    }
+    a:visited {
+      text-decoration: underline;
+      color: #444;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      color: #31c;
+    }
+    a:active {}
+
+    ::selection {
+      background-color: #ec0;
+    }
+
+    /* Layout Styles */
+    .wrapper {
+      width: 60em;
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 1em;
+      background-color: #eee;
+      overflow: hidden;
     }
 
     .section {
