@@ -6,8 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Focus Examples</title>
-  <style>
 
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      margin: 1em;
+      padding: 1em;
+      border: 1px solid purple;
+      min-height: 6em;
+    }
   </style>
 </head>
 <body>
@@ -23,9 +34,14 @@
     <button type="button">Button B</button><br />
     <button type="button">Button C</button><br />
 
-    <div id="A">Section A</div>
-    <div id="B">Section A</div>
-    <div id="C">Section A</div>
+    <div id="A" class="section">Section A</div>
+    <div id="B" class="section">Section B</div>
+    <div
+      id="C"
+      tabindex="-1"
+      class="section">
+      Section C (with tabindex -1)
+    </div>
 
 	</div>
 </body>
